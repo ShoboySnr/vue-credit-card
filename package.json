@@ -14,7 +14,7 @@
     "build": "vue-cli-service build",
     "build:npm": "vue-cli-service build --target lib --name VCreditCard src/CreditCard.vue",
     "lint": "vue-cli-service lint",
-    "postinstall": "npm run build",
+    "postinstall": "yarn run build",
     "start": "node server.js"
   },
   "keywords": [
