@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+#app {
+  background: $white;
+
+  .logo {
+    font-size: 3.7rem;
+  }
+
+  .container {
+    @media screen and (max-width: 1185px) {
+      padding: 0 20px;
+    }
+  }
+
+  #drawer{
+    background: $white;
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+  }
+
+  .menu-link {
+    padding:  0 40px;
+  }
+
+  .avatar-size {
+    margin-left: 45px;
+  }
+}

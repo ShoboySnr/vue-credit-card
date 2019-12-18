@@ -24,7 +24,7 @@
                 </g>
                 <rect x="58.1" y="378.6" class="st11" width="375.5" height="13.5" />
                 <rect x="58.1" y="405.6" class="st11" width="421.7" height="13.5" />
-                <text transform="matrix(1 0 0 1 59.5073 228.6099)" id="svgnameback" class="st12 st13">{{ nameBack }}</text>
+                <text transform="matrix(1 0 0 1 59.5073 228.6099)" id="svgnameback" class="st12 st13"></text>
             </g>
         </svg>
     </div>
@@ -43,7 +43,7 @@ export default {
         },
         color: {
             type: String,
-            default: 'greydark'
+            default: 'lightblue'
         }
     }
 }

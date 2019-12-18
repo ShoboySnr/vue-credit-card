@@ -12,11 +12,11 @@
                     </g>
                     <path class="darkcolor" :class="`${color}dark`" d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z" />
                 </g>
-                <text transform="matrix(1 0 0 1 60.106 295.0121)" id="svgnumber" class="st2 st3 st4">{{ cardNumber || '0123 4567 8910 1112' }}</text>
+                <text transform="matrix(1 0 0 1 60.106 295.0121)" id="svgnumber" class="st2 st3 st4">{{ cardNumber || '4324 5433 9382 1030' }}</text>
                 <text transform="matrix(1 0 0 1 54.1064 428.1723)" id="svgname" class="st2 st5 st6">{{ name || 'John Doe' }}</text>
-                <text transform="matrix(1 0 0 1 54.1074 389.8793)" class="st7 st5 st8">cardholder name</text>
-                <text transform="matrix(1 0 0 1 479.7754 388.8793)" class="st7 st5 st8">expiration</text>
-                <text transform="matrix(1 0 0 1 65.1054 241.5)" class="st7 st5 st8">card number</text>
+                <text transform="matrix(1 0 0 1 54.1074 389.8793)" class="st7 st5 st8">CARDHOLDER NAME</text>
+                <text transform="matrix(1 0 0 1 479.7754 388.8793)" class="st7 st5 st8">EXPIRATION DATE</text>
+                <text transform="matrix(1 0 0 1 65.1054 241.5)" class="st7 st5 st8">CARD NUMBER</text>
                 <g>
                     <text transform="matrix(1 0 0 1 574.4219 433.8095)" id="svgexpire" class="st2 st5 st9">{{ expiration || expirationPlaceholder }}</text>
                     <text transform="matrix(1 0 0 1 479.3848 417.0097)" class="st2 st10 st11">VALID</text>
@@ -67,7 +67,7 @@ export default {
         },
         name: {
             type: String,
-            default: 'JOHN DOE'
+            default: 'John Doe'
         },
         expiration: {
             type: String,
@@ -75,7 +75,7 @@ export default {
         },
         color: {
             type: String,
-            default: 'grey'
+            default: 'lightblue'
         },
         isTwoDigitsYear: {
             type: Boolean,
@@ -84,7 +84,7 @@ export default {
     },
     computed: {
         expirationPlaceholder() {
-            return this.isTwoDigitsYear ? '01/23' : '01/2023';
+            return this.isTwoDigitsYear ? '03/24' : '03/2024';
         }
     }
 }

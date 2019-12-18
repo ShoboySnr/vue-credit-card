@@ -1,0 +1,22 @@
+@import "./variables.scss";
+
+#total {
+  border-top: $size-1 solid $grey;
+  border-bottom: $size-1 solid $grey;
+  padding: $size-40 $size-0;
+}
+
+#complete-payment {
+  padding: $size-20 $size-0;
+
+  .complete-button {
+    width: 250px;
+    height: 50px;
+    font-size: 17px;
+    text-transform: none;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}

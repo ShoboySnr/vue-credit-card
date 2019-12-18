@@ -1,0 +1,340 @@
+@import "./variables.scss";
+
+#card-title {
+  padding-top: 30px;
+  border-top: $size-1 solid $grey;
+  width: 100%;
+
+  .top-card-title {
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      justify-content: center;
+    }
+  }
+}
+
+.vue-credit-card {
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+
+  .card-form-and-image {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1182px) {
+        flex-direction: column !important;
+      }
+
+      .credit-card-form {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          justify-content: space-between;
+          color: $darkgrey;
+          width: 100%;
+
+          .field-group {
+              display: flex;
+
+              @media screen and (max-width: 992px) {
+                flex-direction: column;
+              }
+
+              .field:first-child {
+                  margin-right: 10px;
+              }
+          }
+
+          .field {
+              position: relative;
+              width: 100%;
+              margin: 10px 0;
+
+              label {
+                  padding-bottom: 5px;
+                  font-size: 13px;
+              }
+
+              input {
+                  box-sizing: border-box;
+                  margin-top: 3px;
+                  padding: 15px;
+                  font-size: 16px;
+                  width: 100%;
+                  border-radius: 3px;
+                  border: 1px solid $lightgrey;
+              }
+          }
+      }
+  }
+
+  .ccicon {
+      height: 38px;
+      position: absolute;
+      right: 6px;
+      top: calc(50% - 9px);
+      width: 60px;
+  }
+
+  .credit-card-image {
+      width: 100%;
+      max-width: 32vw;
+      max-height: 251px;
+      height: 54vw;
+      perspective: 1000px;
+
+      @media screen and (max-width: 1182px) {
+        max-width: 100%;
+        margin: 20px 0;
+      } 
+  }
+
+  #ccsingle {
+      position: absolute;
+      right: 15px;
+      top: 20px;
+
+      svg {
+          width: 100px;
+          max-height: 60px;
+      }
+  }
+
+  .creditcard {
+      width: 100%;
+      max-width: 400px;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+      cursor: pointer;
+
+      .front,
+      .back {
+          position: absolute;
+          width: 100%;
+          max-width: 400px;
+          backface-visibility: hidden;
+          color: #47525d;
+      }
+
+      .back {
+          transform: rotateY(180deg);
+      }
+
+      &.flipped {
+          transform: rotateY(180deg);
+      }
+
+      svg#cardfront,
+      svg#cardback {
+          width: 100%;
+          box-shadow: 1px 5px 6px 0px black;
+          border-radius: 22px;
+      }
+
+      .lightcolor,
+      .darkcolor {
+          transition: fill .5s;
+      }
+
+      .lightblue {
+          fill: #03A9F4;
+      }
+
+      .lightbluedark {
+          fill: #0288D1;
+      }
+
+      .red {
+          fill: #ef5350;
+      }
+
+      .reddark {
+          fill: #d32f2f;
+      }
+
+      .purple {
+          fill: #ab47bc;
+      }
+
+      .purpledark {
+          fill: #7b1fa2;
+      }
+
+      .cyan {
+          fill: #26c6da;
+      }
+
+      .cyandark {
+          fill: #0097a7;
+      }
+
+      .green {
+          fill: #66bb6a;
+      }
+
+      .greendark {
+          fill: #388e3c;
+      }
+
+      .lime {
+          fill: #d4e157;
+      }
+
+      .limedark {
+          fill: #afb42b;
+      }
+
+      .yellow {
+          fill: #ffeb3b;
+      }
+
+      .yellowdark {
+          fill: #f9a825;
+      }
+
+      .orange {
+          fill: #ff9800;
+      }
+
+      .orangedark {
+          fill: #ef6c00;
+      }
+
+      .grey {
+          fill: #bdbdbd;
+      }
+
+      .greydark {
+          fill: #616161;
+      }
+  }
+
+  #svgname {
+      text-transform: none;
+  }
+
+  #cardfront {
+      .st2 {
+          fill: #FFFFFF;
+      }
+
+      .st3 {
+          font-family: 'Source Code Pro', monospace;
+          font-weight: 600;
+      }
+
+      .st4 {
+          font-size: 54.7817px;
+      }
+
+      .st5 {
+          font-family: 'Source Code Pro', monospace;
+          font-weight: 400;
+      }
+
+      .st6 {
+          font-size: 33.1112px;
+      }
+
+      .st7 {
+          opacity: 0.6;
+          fill: #FFFFFF;
+      }
+
+      .st8 {
+          font-size: 24px;
+      }
+
+      .st9 {
+          font-size: 36.5498px;
+      }
+
+      .st10 {
+          font-family: 'Source Code Pro', monospace;
+          font-weight: 300;
+      }
+
+      .st11 {
+          font-size: 16.1716px;
+      }
+
+      .st12 {
+          fill: #4C4C4C;
+      }
+  }
+
+  #cardback {
+      .st0 {
+          fill: none;
+          stroke: #0F0F0F;
+          stroke-miterlimit: 10;
+      }
+
+      .st2 {
+          fill: #111111;
+      }
+
+      .st3 {
+          fill: #F2F2F2;
+      }
+
+      .st4 {
+          fill: #D8D2DB;
+      }
+
+      .st5 {
+          fill: #C4C4C4;
+      }
+
+      .st6 {
+          font-family: 'Source Code Pro', monospace;
+          font-weight: 400;
+      }
+
+      .st7 {
+          font-size: 27px;
+      }
+
+      .st8 {
+          opacity: 0.6;
+      }
+
+      .st9 {
+          fill: #FFFFFF;
+      }
+
+      .st10 {
+          font-size: 24px;
+      }
+
+      .st11 {
+          fill: #EAEAEA;
+      }
+
+      .st12 {
+          font-family: 'Rock Salt', cursive;
+      }
+
+      .st13 {
+          font-size: 37.769px;
+      }
+  }
+}
+
+#credit-card-demo {
+  margin: 30px 0px;
+
+  input {
+    background: $lightgrey;
+    border-color: $grey;
+  }
+
+  .add-button {
+    text-transform: none;
+    height: 66px;
+    font-size: 18px;
+  }
+}
