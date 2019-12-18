@@ -17,10 +17,6 @@
     "postinstall": "npm run build",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ShoboySnr/vue-credit-card.git"
-  },
   "keywords": [
     "vue",
     "credit",
