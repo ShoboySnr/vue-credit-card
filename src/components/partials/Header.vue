@@ -3,9 +3,9 @@
   <v-toolbar color="white" light flat class="dark-text fixed" app clipped-left>
    <v-toolbar-side-icon
     @click.stop="drawer = !drawer"
-    class="hidden-md-and-up hamburger white-text"
+    class="hidden-md-and-up hamburger black-text"
    >
-    <v-icon class="pr-2" x-small>mdi-menu</v-icon>
+    <p class="pr-2" x-small>Menu</p>
    </v-toolbar-side-icon>
    <v-container class="d-flex">
     <v-toolbar-title>
@@ -37,7 +37,7 @@
    v-model="drawer"
    temporary
    absolute
-   width="200"
+   width="320"
    id="drawer"
    class="pt-10 pb-10"
   >
