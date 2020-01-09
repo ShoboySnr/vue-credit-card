@@ -17,6 +17,7 @@
     background: $white;
     width: 320px !important;
     max-width: 50vw !important;
+    padding: 20px;
   }
 
   .hamburger {
@@ -27,6 +28,7 @@
     i {
       font-size: 50px !important;
       color: black !important;
+      cursor: pointer;
     }
   }
 
