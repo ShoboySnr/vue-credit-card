@@ -5,7 +5,7 @@
     @click.stop="drawer = !drawer"
     class="hidden-md-and-up hamburger black-text"
    >
-    <p class="pr-2" x-small>Menu</p>
+    <v-icon class="pr-2 material-icons" x-small>menu</v-icon>
    </v-toolbar-side-icon>
    <v-container class="d-flex">
     <v-toolbar-title>
@@ -63,13 +63,15 @@
 
 <script>
 import { menuItems } from '../data/data';
+import { mdiMenu } from '@mdi/js'
 
 export default {
   data () {
     return {
       fixed: false,
       menuItems,
-      drawer: null 
+      drawer: null,
+      iconMenu: mdiMenu
     }
   }
 };

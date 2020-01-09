@@ -40,6 +40,7 @@
     "vuetify": "^2.1.15"
   },
   "devDependencies": {
+    "@mdi/js": "^4.7.95",
     "@vue/cli-plugin-babel": "^3.6.0",
     "@vue/cli-plugin-eslint": "^3.6.0",
     "@vue/cli-service": "^3.6.0",
@@ -47,6 +48,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.2",
+    "material-design-icons-iconfont": "^5.0.1",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "serve-static": "^1.14.1",
